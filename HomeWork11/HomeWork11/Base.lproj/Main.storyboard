@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HomeWork11" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="3X0-Ca-4Hq">
+                                <rect key="frame" x="0.0" y="44" width="428" height="848"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qyo-qr-EoU">
+                                        <rect key="frame" x="0.0" y="0.0" width="428" height="277.33333333333331"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UYL-t6-u8U" customClass="ClockView" customModule="HomeWork11" customModuleProvider="target">
+                                                <rect key="frame" x="75.333333333333343" y="0.0" width="277.33333333333326" height="277.33333333333331"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="UYL-t6-u8U" secondAttribute="height" multiplier="1:1" id="eLQ-02-YZK"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemGray3Color"/>
+                                        <constraints>
+                                            <constraint firstItem="UYL-t6-u8U" firstAttribute="centerX" secondItem="Qyo-qr-EoU" secondAttribute="centerX" id="CZl-EM-2Xa"/>
+                                            <constraint firstItem="UYL-t6-u8U" firstAttribute="top" secondItem="Qyo-qr-EoU" secondAttribute="top" id="bNC-8v-qzw"/>
+                                            <constraint firstAttribute="bottom" secondItem="UYL-t6-u8U" secondAttribute="bottom" id="h9A-bG-008"/>
+                                            <constraint firstItem="UYL-t6-u8U" firstAttribute="centerY" secondItem="Qyo-qr-EoU" secondAttribute="centerY" id="ugh-4f-FOB"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ruF-MB-QRX">
+                                        <rect key="frame" x="0.0" y="285.33333333333337" width="428" height="277.33333333333337"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wdh-bz-lkr" customClass="CustomButton" customModule="HomeWork11" customModuleProvider="target">
+                                                <rect key="frame" x="191" y="123.66666666666669" width="46" height="30"/>
+                                                <color key="backgroundColor" red="0.38815027949999997" green="0.95986801389999998" blue="0.1996470558" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" title="Button"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" systemColor="secondaryLabelColor"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderSize">
+                                                        <real key="value" value="15"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="radius">
+                                                        <real key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P5V-aC-YeX" customClass="CustomButton" customModule="HomeWork11" customModuleProvider="target">
+                                                <rect key="frame" x="107" y="69.333333333333357" width="214" height="138.66666666666663"/>
+                                                <color key="backgroundColor" red="0.38815027949999997" green="0.95986801389999998" blue="0.1996470558" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" title="Button"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" systemColor="secondaryLabelColor"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderSize">
+                                                        <real key="value" value="15"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="radius">
+                                                        <real key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="secondaryLabelColor"/>
+                                        <constraints>
+                                            <constraint firstItem="P5V-aC-YeX" firstAttribute="height" secondItem="ruF-MB-QRX" secondAttribute="height" multiplier="0.5" id="2Gx-tt-XIq"/>
+                                            <constraint firstItem="P5V-aC-YeX" firstAttribute="centerX" secondItem="ruF-MB-QRX" secondAttribute="centerX" id="ABe-zh-IpI"/>
+                                            <constraint firstItem="P5V-aC-YeX" firstAttribute="centerY" secondItem="ruF-MB-QRX" secondAttribute="centerY" id="bqg-yu-Odu"/>
+                                            <constraint firstItem="P5V-aC-YeX" firstAttribute="width" secondItem="ruF-MB-QRX" secondAttribute="width" multiplier="0.5" id="oTe-aH-AKZ"/>
+                                            <constraint firstItem="Wdh-bz-lkr" firstAttribute="centerY" secondItem="ruF-MB-QRX" secondAttribute="centerY" id="pRe-DI-d6e"/>
+                                            <constraint firstItem="Wdh-bz-lkr" firstAttribute="centerX" secondItem="ruF-MB-QRX" secondAttribute="centerX" id="yll-2r-00u"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ldE-Xi-lyB">
+                                        <rect key="frame" x="0.0" y="570.66666666666663" width="428" height="277.33333333333337"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iZy-au-qNV" customClass="SegmentView" customModule="HomeWork11" customModuleProvider="target">
+                                                <rect key="frame" x="90" y="117.99999999999999" width="248" height="41.333333333333329"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zKI-rm-2Vk" userLabel="Back" customClass="Layer" customModule="HomeWork11" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="124" height="41.333333333333336"/>
+                                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="backgroundColorOfLayer">
+                                                                <color key="value" systemColor="systemIndigoColor"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </view>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="azf-nH-G9i">
+                                                        <rect key="frame" x="0.0" y="0.0" width="248" height="41.333333333333336"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DMP-m8-3t1" customClass="Segments" customModule="HomeWork11" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="124" height="41.333333333333336"/>
+                                                                <state key="normal">
+                                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="segmentText" value="Hfjdu"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="firstButton:" destination="iZy-au-qNV" eventType="touchUpInside" id="aL4-HY-MYf"/>
+                                                                    <action selector="firstButton:" destination="Sdb-ui-oO1" eventType="touchUpInside" id="rUH-S4-QPZ"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zHs-rU-bVf" customClass="Segments" customModule="HomeWork11" customModuleProvider="target">
+                                                                <rect key="frame" x="124" y="0.0" width="124" height="41.333333333333336"/>
+                                                                <state key="normal">
+                                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="segmentText" value="37wrh"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="secondButton:" destination="Sdb-ui-oO1" eventType="touchUpInside" id="3qq-3V-WMh"/>
+                                                                    <action selector="secondButton:" destination="iZy-au-qNV" eventType="touchUpInside" id="ESR-I0-W2D"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="zKI-rm-2Vk" secondAttribute="bottom" id="8nq-7b-fIV"/>
+                                                    <constraint firstAttribute="width" secondItem="iZy-au-qNV" secondAttribute="height" multiplier="6:1" id="NKO-D2-FHg"/>
+                                                    <constraint firstAttribute="trailing" secondItem="azf-nH-G9i" secondAttribute="trailing" id="O2e-ie-gcQ"/>
+                                                    <constraint firstItem="zKI-rm-2Vk" firstAttribute="top" secondItem="iZy-au-qNV" secondAttribute="top" id="cJu-mw-7FQ"/>
+                                                    <constraint firstItem="azf-nH-G9i" firstAttribute="top" secondItem="iZy-au-qNV" secondAttribute="top" id="dWD-y0-ifD"/>
+                                                    <constraint firstAttribute="bottom" secondItem="azf-nH-G9i" secondAttribute="bottom" id="fPQ-mt-Rqg"/>
+                                                    <constraint firstItem="azf-nH-G9i" firstAttribute="leading" secondItem="iZy-au-qNV" secondAttribute="leading" id="g9I-xG-VGh"/>
+                                                    <constraint firstItem="zKI-rm-2Vk" firstAttribute="width" secondItem="DMP-m8-3t1" secondAttribute="width" id="k70-gG-rLH"/>
+                                                    <constraint firstItem="zKI-rm-2Vk" firstAttribute="leading" secondItem="iZy-au-qNV" secondAttribute="leading" id="moW-PY-sBh"/>
+                                                    <constraint firstItem="zKI-rm-2Vk" firstAttribute="height" secondItem="iZy-au-qNV" secondAttribute="height" id="xMQ-kW-fmz"/>
+                                                </constraints>
+                                                <connections>
+                                                    <outlet property="Back" destination="zKI-rm-2Vk" id="oXb-yH-TlS"/>
+                                                    <outlet property="back" destination="zKI-rm-2Vk" id="svO-oC-LvH"/>
+                                                </connections>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="separatorColor"/>
+                                        <constraints>
+                                            <constraint firstItem="iZy-au-qNV" firstAttribute="centerX" secondItem="ldE-Xi-lyB" secondAttribute="centerX" id="AX1-pE-UTU"/>
+                                            <constraint firstItem="iZy-au-qNV" firstAttribute="centerY" secondItem="ldE-Xi-lyB" secondAttribute="centerY" id="RVw-uC-zqy"/>
+                                            <constraint firstItem="iZy-au-qNV" firstAttribute="width" secondItem="ldE-Xi-lyB" secondAttribute="width" multiplier="0.57971" id="zO2-dq-cRE"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="3X0-Ca-4Hq" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="QI3-0W-34D"/>
+                            <constraint firstItem="3X0-Ca-4Hq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QwX-d9-4nY"/>
+                            <constraint firstItem="3X0-Ca-4Hq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="ZZ6-zx-m11"/>
+                            <constraint firstItem="3X0-Ca-4Hq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="s1r-QP-UKu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="3X0-Ca-4Hq" secondAttribute="bottom" id="uHb-Kp-hX3"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <exit id="Sdb-ui-oO1" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="110" y="45"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="DMP-m8-3t1">
+            <size key="intrinsicContentSize" width="30" height="30"/>
+        </designable>
+        <designable name="zHs-rU-bVf">
+            <size key="intrinsicContentSize" width="30" height="30"/>
+        </designable>
+    </designables>
+    <resources>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="separatorColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.28999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray3Color">
+            <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
