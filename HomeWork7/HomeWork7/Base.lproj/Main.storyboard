@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="tjZ-xZ-N8R">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Nav View Controller-->
+        <scene sceneID="U6Z-2d-pch">
+            <objects>
+                <viewController id="W1G-lC-3NG" customClass="NavViewController" customModule="HomeWork7" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8TO-He-52X">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="RdJ-fD-lC7"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="zuG-sf-HKC"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fdI-xn-aea" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1494" y="38"/>
+        </scene>
+        <!--First View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="FirstViewController" customModule="HomeWork7" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8xD-SN-dpg">
+                                <rect key="frame" x="176" y="221" width="63" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Зеленый"/>
+                                <connections>
+                                    <action selector="greenNavButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LBX-bv-Gs1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NOP-vf-hdk">
+                                <rect key="frame" x="184" y="279" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Синий"/>
+                                <connections>
+                                    <action selector="yellowNavButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3KN-id-Ox1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BkG-o6-9Fv">
+                                <rect key="frame" x="175" y="328" width="64" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Красный"/>
+                                <connections>
+                                    <action selector="redNavButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4Mg-n9-bQ2"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ofr-Gu-7Vd"/>
+                    <connections>
+                        <segue destination="W1G-lC-3NG" kind="show" identifier="navSegue" id="h2v-RE-dwE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="695.6521739130435" y="37.5"/>
+        </scene>
+        <!--Second-->
+        <scene sceneID="33Q-8a-vYc">
+            <objects>
+                <viewController id="Rbr-gH-Hbf" customClass="TextViewController" customModule="HomeWork7" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WaW-vn-Lyq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Mi-15-u0S">
+                                <rect key="frame" x="172" y="226" width="71" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Изменить"/>
+                                <connections>
+                                    <action selector="changeButton:" destination="Rbr-gH-Hbf" eventType="touchUpInside" id="5re-3B-xE5"/>
+                                    <action selector="changeButton:" destination="cNb-FI-tov" eventType="touchUpInside" id="X0t-OK-IwN"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Выбран зелёный" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tkq-El-zVJ">
+                                <rect key="frame" x="87" y="120" width="220" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.32771024107933044" green="0.0" blue="0.99977988004684448" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" systemColor="systemPinkColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="wvd-vh-jdn"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Second" image="paperplane" catalog="system" id="XYa-hx-anW"/>
+                    <connections>
+                        <outlet property="colorLabel" destination="Tkq-El-zVJ" id="Knl-32-w5j"/>
+                        <segue destination="NIe-vk-kff" kind="show" identifier="changeColor" id="gg8-Lv-ENb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BD0-qO-FXB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="cNb-FI-tov" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="-214" y="749"/>
+        </scene>
+        <!--Choose View Controller-->
+        <scene sceneID="qgO-Wt-bX4">
+            <objects>
+                <viewController storyboardIdentifier="ChooseViewController" id="NIe-vk-kff" customClass="ChooseViewController" customModule="HomeWork7" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LZx-EC-lbc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Выбран зеленый" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Yf8-sD-I4v">
+                                <rect key="frame" x="107" y="106" width="200" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="textColour:" destination="evN-89-jty" eventType="editingDidEnd" id="08k-D6-K9M"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Fr-Pe-ngZ">
+                                <rect key="frame" x="144" y="131" width="127" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Выбрать зеленый"/>
+                                <connections>
+                                    <action selector="greenColor:" destination="NIe-vk-kff" eventType="touchUpInside" id="D5i-qJ-9NX"/>
+                                    <action selector="greenColour:" destination="evN-89-jty" eventType="touchUpInside" id="YZG-Lb-4UY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V1I-19-kPq">
+                                <rect key="frame" x="153" y="229" width="109" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Выбрать синий"/>
+                                <connections>
+                                    <action selector="blueColor:" destination="NIe-vk-kff" eventType="touchUpInside" id="fPP-jU-4Ug"/>
+                                    <action selector="blueColour:" destination="evN-89-jty" eventType="touchUpInside" id="W4a-aV-6xG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ntf-CE-bWO">
+                                <rect key="frame" x="143" y="186" width="128" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Выбрать красный"/>
+                                <connections>
+                                    <action selector="redColor:" destination="NIe-vk-kff" eventType="touchUpInside" id="eHB-ot-GVO"/>
+                                    <action selector="redColour:" destination="evN-89-jty" eventType="touchUpInside" id="3YB-dJ-uLk"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vtO-wB-CFo"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="b4W-V0-iir"/>
+                    <connections>
+                        <outlet property="textColor" destination="Yf8-sD-I4v" id="dzq-JA-16R"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="m0D-hY-dbv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="evN-89-jty" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="695.6521739130435" y="748.66071428571422"/>
+        </scene>
+        <!--Third-->
+        <scene sceneID="HcR-3i-b6S">
+            <objects>
+                <viewController id="786-3d-YKM" customClass="OutViewController" customModule="HomeWork7" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aTi-Da-oe7">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dCu-nM-If7">
+                                <rect key="frame" x="174" y="157" width="67" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title=" Зеленый"/>
+                                <connections>
+                                    <action selector="inGreenButton:" destination="786-3d-YKM" eventType="touchUpInside" id="wGd-ih-giQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rgW-dR-Gh3">
+                                <rect key="frame" x="166" y="233" width="83" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Пурпурный"/>
+                                <connections>
+                                    <action selector="inPurpleColor:" destination="786-3d-YKM" eventType="touchUpInside" id="Tdm-aO-6N7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pus-vB-aBG">
+                                <rect key="frame" x="178" y="195" width="59" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Желтый"/>
+                                <connections>
+                                    <action selector="inYellowButton:" destination="786-3d-YKM" eventType="touchUpInside" id="Hlt-Gi-pER"/>
+                                </connections>
+                            </button>
+                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KbV-80-9fo">
+                                <rect key="frame" x="-62" y="512" width="476" height="301"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <connections>
+                                    <segue destination="GsD-BC-r6p" kind="embed" identifier="inOutSegue" id="yph-dL-Q2V"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="4us-50-7Bi"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Third" image="arrowshape.turn.up.backward" catalog="system" id="EdD-iz-Nt8"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xLJ-W7-OVT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-214.49275362318843" y="1472.5446428571429"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="HVS-kV-y2K">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="tjZ-xZ-N8R" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="NXB-9T-FWD">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Q3d-c6-UYl" kind="relationship" relationship="viewControllers" id="sJy-e7-oJC"/>
+                        <segue destination="Rbr-gH-Hbf" kind="relationship" relationship="viewControllers" id="HCV-79-usk"/>
+                        <segue destination="786-3d-YKM" kind="relationship" relationship="viewControllers" id="WKj-Fn-1kc"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Qe-bC-6Ig" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1472" y="749"/>
+        </scene>
+        <!--First-->
+        <scene sceneID="une-E6-Kez">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Q3d-c6-UYl" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="First" image="folder" catalog="system" id="kR4-h2-lkg"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="wdi-nh-xo8">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="SJr-PB-v8o"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QqY-G2-zu1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-214.49275362318843" y="37.5"/>
+        </scene>
+        <!--Sec View Controller-->
+        <scene sceneID="RaE-TH-6zF">
+            <objects>
+                <viewController id="GsD-BC-r6p" customClass="SecViewController" customModule="HomeWork7" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uFo-aP-hdT">
+                        <rect key="frame" x="0.0" y="0.0" width="476" height="301"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qoc-c3-tD0">
+                                <rect key="frame" x="205" y="97" width="67" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title=" Зеленый"/>
+                                <connections>
+                                    <action selector="outGreenColor:" destination="GsD-BC-r6p" eventType="touchUpInside" id="sjX-lH-3Fu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1fw-qe-4LY">
+                                <rect key="frame" x="197" y="173" width="83" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Пурпурный"/>
+                                <connections>
+                                    <action selector="outPurpleColor:" destination="GsD-BC-r6p" eventType="touchUpInside" id="Wv9-ea-aT5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3kx-FU-w8d">
+                                <rect key="frame" x="209" y="135" width="59" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Желтый"/>
+                                <connections>
+                                    <action selector="outYellowColor:" destination="GsD-BC-r6p" eventType="touchUpInside" id="twt-I6-VfL"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Y5-XF-yR3"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="OWy-fb-K84"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7fl-3Z-18d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="664" y="1473"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="arrowshape.turn.up.backward" catalog="system" width="128" height="106"/>
+        <image name="folder" catalog="system" width="128" height="97"/>
+        <image name="paperplane" catalog="system" width="128" height="118"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
